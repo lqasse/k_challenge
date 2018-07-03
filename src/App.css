@@ -1,0 +1,120 @@
+html {
+  height: 100vh;
+  color: white;
+  background: #8360c3;
+  background: -webkit-linear-gradient(to top, #2ebf91, #8360c3);
+  background: linear-gradient(to top, #2ebf91, #8360c3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  display: flex;
+  flex-grow: 1;
+  width: 90vw;
+  max-width: 800px;
+}
+
+.ScoreContainer,
+.ItemContainer {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.app-title {
+  font-family: 'Shrikhand', cursive;
+}
+
+.container-title {
+  border-bottom: 1px solid black;
+  height: 40px;
+  margin: 10px;
+}
+
+.ItemContainer {
+  width: 100%;
+}
+
+.item-button-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-item-button {
+  width: 120px;
+  height: 120px;
+  margin: 30px;
+  font-family: 'Righteous', cursive;
+  font-size: 40px;
+  color: #8360c3;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 4px #8360c3;
+  cursor: pointer;
+}
+
+.ScoreContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.scoreItems {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ScoreItem {
+  border-bottom: 1px solid black;
+  height: 40px;
+}
+.ScoreItem td {
+  text-align: center;
+}
+
+.ScoreSummary {
+  height: 10vh;
+  margin-top: auto;
+  bottom: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.ScoreSummary button {
+  width: 50%;
+  height: 40px;
+  background-color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: #8360c3;
+  border-color: #8360c3;
+}
+
+.ScoreSummary .sum-reset-container {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ScoreSummary .bonus-container {
+  border-bottom: 1px solid black;
+  height: 30px;
+}
+
+.ScoreSummary .total-points {
+  font-family: 'Shrikhand', cursive;
+
+  font-size: 30px;
+}
